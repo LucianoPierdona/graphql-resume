@@ -8,8 +8,13 @@ export interface BioInterface {
     objective: string;
 }
 
+export interface SkillInterface {
+    id: string;
+    title: string;
+}
+
 export interface PositionInterface {
-    id: string,
+    id: string;
     title: string;
     company: string;
     startDate: string;

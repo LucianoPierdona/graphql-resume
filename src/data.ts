@@ -8,7 +8,28 @@ export const data = {
       linkedin: "https://www.linkedin.com/in/luciano-marcos-pierdona-junior-3b3821198",
       objective: "Become a master in React.",
     },
-    skills: ["Speaking Spanish", "Speaking English", "Speaking Portuguese", "Reactjs", "React-Native"],
+    skills: [
+      {
+        id: "1",
+        name: "Speaking Portuguese"
+      }, 
+      {
+        id: "2",
+        name: "Speaking English"
+      }, 
+      {
+        id: "3",
+        name: "Speaking Spanish"
+      }, 
+      {
+        id: "4",
+        name: "Reactjs"
+      }, 
+      {
+        id: "5",
+        name: "React-Native"
+      }
+    ],
     positions: [
       {
         id: "1",
@@ -31,7 +52,7 @@ export const data = {
         employmentType: "Intern",
         location: "Antônio Prado, Brazil",
         achievements: [
-          "Help clients with ours services, such as Magento, Factory, beyond others",
+          "Help clients with our services, such as Magento, Factory, beyond others",
           "Working with React, TypeScript, Next.js and Apollo to build interactive websites."
         ],
       }

@@ -1,19 +1,33 @@
 import { queryType, idArg } from '@nexus/schema';
 import { data } from 'src/data'
-import { Bio, Position  } from './index';
+import { Bio, Position, Skills  } from './index';
 
 export const Query = queryType({
     definition(t) {
         t.field("bio", {
             type: Bio,
-            description: "find all the data in Bio",
-            resolve: () => data.bio,
+            description: "Show the Biography",
+            resolve: () => data.bio
         });
+
+        t.list.field("skills", {
+            type: Skills,
+            description: "Show all the positions",
+            resolve: () => data.skills
+        });
+
+        t.field("skill", {
+            type: Skills,
+            description: "Find a skill by its ID",
+            nullable: true,
+            args: { id: idArg() },
+            resolve: (root, {id}: {id: string}, ctx) => data.skills.find(skills => skills.id === id)
+        })
 
         t.list.field("positions", {
             type: Position,
-            description: "find a position by its date",
-            resolve: () => data.positions,
+            description: "Show all the positions",
+            resolve: () => data.positions
         });
 
         t.field("position", {
