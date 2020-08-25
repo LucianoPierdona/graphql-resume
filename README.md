@@ -1,4 +1,3 @@
-This is a [Next.js](https://nextjs.org/) 
 # Resume
 ### Application Made with Next.js, Apollo and GraphQL
 ### Thanks to [Leigh Halliday](https://github.com/leighhalliday) for helping me to do this project ;D
