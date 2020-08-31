@@ -40,7 +40,7 @@ export const data = {
         employmentType: "FULL_TIME",
         location: "Antônio Prado, Brazil",
         achievements: [
-          "Supermarket Working, from receiving commodities until help clients with their bags",
+          "Supermarket Working, Its a test, just ignore from receiving commodities until help clients with their bags",
         ],
       },
       {

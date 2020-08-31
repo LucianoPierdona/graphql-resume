@@ -12,8 +12,8 @@ export const schema = makeSchema({
         sources: [
             {
                 alias: "faces",
-                source: path.join(process.cwd(), "src", "interfaces.js"),
-                typeMatch: (type) => new RegExp(`${type}Interface`),
+                source: path.join(process.cwd(), "src", "interfaces.ts"),
+                typeMatch: (type) => new RegExp(`(${type}Interface)`),
             },
         ],
         backingTypeMap: {
@@ -21,6 +21,6 @@ export const schema = makeSchema({
             URL: "URL"
         },
         debug: process.env.NODE_ENV === "development",
-        
+        // Teste aqui
     },
 });
