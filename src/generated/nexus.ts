@@ -3,7 +3,6 @@
  * Do not make changes to this file directly
  */
 
-
 import * as faces from "../interfaces"
 import { core } from "@nexus/schema"
 declare global {
