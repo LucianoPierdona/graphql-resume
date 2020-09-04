@@ -30,3 +30,5 @@ yarn run
 ```
 
 # Screenshots
+
+![Background](https://github.com/LucianoPierdona/graphql-resume/blob/master/public/readme.png)
